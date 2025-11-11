@@ -15,7 +15,7 @@ host="localhost",
  cursor = conn.cursor()
  cursor.execute("SELECT 'Sivu on personoitu'")
  personointi = cursor.fetchone()
- cursor.execute("SELECT CURRENT_TIMESTAMP;")
+ cursor.execute("SELECT NOW();")
  time = cursor.fetchone()
 
 
