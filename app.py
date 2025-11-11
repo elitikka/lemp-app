@@ -15,7 +15,7 @@ host="localhost",
  cursor = conn.cursor()
  cursor.execute("SELECT 'Sivu on personoitu'")
  personointi = cursor.fetchone()
- cursor.execute("SELECT 'Versiohallintaan käytetty: https://github.com/elitikka/lemp-app")
+ cursor.execute("SELECT 'Versiohallintaan käytetty: https://github.com/elitikka/lemp-app'")
  versiohallinta = cursor.fetchone()
  cursor.execute("SELECT NOW();")
  time = cursor.fetchone()
