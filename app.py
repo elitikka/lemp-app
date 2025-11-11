@@ -14,6 +14,7 @@ host="localhost",
 
  cursor = conn.cursor()
  cursor.execute("SELECT 'Hello from MySQL!'")
+ result = cursor.fetchone()
  cursor.execute("SELECT CURRENT_TIMESTAMP;")
  result = cursor.fetchone()
 
