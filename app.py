@@ -11,9 +11,13 @@ host="localhost",
  password="BemmusKa94.",
  database="exampledb"
  )
+
  cursor = conn.cursor()
  cursor.execute("SELECT 'Hello from MySQL!'")
+ cursor.execute("SELECT CURRENT_TIMESTAMP;")
  result = cursor.fetchone()
+
+
  # Clean up
  cursor.close()
  conn.close()
