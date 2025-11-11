@@ -22,6 +22,6 @@ host="localhost",
  # Clean up
  cursor.close()
  conn.close()
- return f"<h1>{personointi[0]}</h1><h2>{time[0]}</h2>"
+ return f"<h1>{personointi[0]}</h1><h2>{str(time[0])}</h2>"
 if __name__ == '__main__':
  app.run(host='0.0.0.0', port=5000)
